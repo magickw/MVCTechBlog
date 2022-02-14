@@ -1,9 +1,14 @@
 <div>
-{{#each posts as |post|}}
-
-{{> post-info post }}
+    {{!-- <h1>All Posts</h3> --}}
+    {{#each posts as |post|}}
+    <div class="post post-list">
+        <h2><a href="/post/{{id}}">{{title}}</a></h2>
+         Posted by <b>{{user.name}}</b> 
+        | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        <h4>{{post_text}}</h4>
+        <br>
+    </div>
+    {{else}}
+    <h6>There are currently no posts</h6> 
+    {{/each}}
 </div>
-
-{{else}}
-<h6>There are currently no posts</h6>
-{{/each}}
