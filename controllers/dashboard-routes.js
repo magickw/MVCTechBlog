@@ -86,7 +86,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
 });
 
 // route to create/add a new post by author
-router.get('/create/', withAuth, (req, res) => {
+router.get('/new', withAuth, (req, res) => {
   Post.findAll({
     where: {
       // use the ID from the session
