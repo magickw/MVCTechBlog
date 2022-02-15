@@ -107,6 +107,9 @@ main {
   color: #3486eb;
 }
 
+.save-post-btn {
+  background-color: #094352;
+}
 .delete-post-btn {
   background-color: #d41414;
 }
