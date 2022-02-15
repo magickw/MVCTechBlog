@@ -8,7 +8,7 @@ async function editFormHandler (event) {
 
   //PUT method to edit the post
   if(title && post_text && id){
-    const response = await fetch(`/api/post/${id}`, {
+    const response = await fetch(`/api/posts/${id}`, {
     method: 'PUT',
     body: JSON.stringify({
       title,

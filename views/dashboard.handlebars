@@ -1,30 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<section class="rows">
+  <div class = "row">
+    <h2>Create New Post</h2>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Review</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+    <form class="new-post-form">
+      <div>
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" name="post-title" />
+      </div>
+      <div>
+        <label for="post-text">Text</label>
+        <textarea id="post-text" name="post-text"></textarea>
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+  </div>
 
-<body class="flex-column min-100-vh">
-  <header class="hero">
-    <h1 class="app-title"><a href="/dashboard">Your Posts</a></h1>
-  </header>
+</section>
 
-  <main class="col-auto">
-    {{{body}}}
-     {{#each posts as |post|}}
-    {{else}}
-    <h2>You do not have any posts</h2> 
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/post/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
     {{/each}}
-  </main>
+  </ol>
+</section>
+{{/if}}
 
-  <footer class="footer flex-row justify-center">
-    <a href="/newpost">New Post</a>
-  </footer>
-</body>
-
-<script src="/js/logout.js"></script>
-</html>
+<script src="js/logout.js"></script>
