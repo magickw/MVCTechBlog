@@ -4,16 +4,16 @@ async function newFormHandler(event) {
 
     // Get the post title and post text from the form
     const title = document.querySelector('input[name="post-title"]').value.trim();
-    const content = document.querySelector('textarea[name="post-text"]').value.trim();
+    const post_text = document.querySelector('textarea[name="post-text"]').value.trim();
 
 
  
-    if (title && content){
+    if (title && post_text){
       const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
         title,
-        content
+        post_text
       }),
       headers: {
         'Content-Type': 'application/json'
