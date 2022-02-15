@@ -14,13 +14,17 @@
   </header>
 
   <main class="col-auto">
-    {{#if posts}}
+    {{#if posts.length}}
     {{#each posts as |post|}}
-    {{post.post_text}}
+        {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}"><button class="edit-button">edit post</button></a>
+        </div>
     {{/each}}
-    {{else}}
-    <h2>You do not have any posts</h2>
-    {{/if}}
+
+{{else}}
+<h4>you do not currently have any posts</h4>
+
+{{/if}}
   </main>
 
   <footer class="footer flex-row justify-center">
