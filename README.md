@@ -38,7 +38,7 @@ Then open your browser and type http://localhost:3001/ to run this application o
 The link to the deployed application is: [Tech Review](https://guotechblog.herokuapp.com/).
 
 ## Demo
-Below is the demostration of this application. CLick <a src="images/tech-blog screen-capture.webm">here</a> for a longer walk-through video.
+Below is the demostration of this application. Click <a href="images/tech-blog screen-capture.webm">here</a> for a longer walk-through video.
 <img src="images/demo.gif" alt="demo" />
 
 Screenshot of homepage:
