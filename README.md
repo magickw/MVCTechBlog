@@ -21,16 +21,13 @@ This application A tech blog which allows the developers to publish blog posts, 
 ## Installation
 `git clone` the repo to your local machine. To use this application, please run the following command:
 
-`npm init` -- creates a package.json file for your application.
-
 And then run the following commands to install the dependencies: 
 
 `npm install`
 
-`npm install express`
 
 ## Usage
-Type the following command in your termimal:
+Run `mysql -u root -p` -> enter you mysql shell password, then run `source db/schema.sql`, and quit. Run `node seeds/index.js` to seed the database.  Type the following command in your termimal:
 
 `npm start`
 
@@ -38,17 +35,20 @@ Then open your browser and type http://localhost:3001/ to run this application o
 
 
 ## Deployed Link
-The link to the deployed application is: #.
+The link to the deployed application is: [Tech Review](https://guotechblog.herokuapp.com/).
 
 ## Demo
-Below is the demostration of this application:
-<img src="#" alt="demo" />
+Below is the demostration of this application. CLick <a src="images/tech-blog screen-capture.webm">here</a> for a longer walk-through video.
+<img src="images/demo.gif" alt="demo" />
+
+Screenshot of homepage:
+<img src="images/homepage.png" alt="homepage" />
 
 Screenshot of dashboard:
 <img src="images/dashboard.png" alt="dashboard" />
 
-Screenshot of a single post:
-<img src="images\singlepost.png" alt="singlepost" />
+Screenshot of a post editing panel:
+<img src="images/edit.png" alt="edit" />
 
 
 **[⬆ back to top](#table-of-contents)**
@@ -74,11 +74,7 @@ This application is developed by Baofeng Guo. If you would like to contribute it
 **[⬆ back to top](#table-of-contents)**
 
 ## Tests
-To run tests on the application, run
-
-`npm install jest`
-
-and then `npm run test` from the command line.
+There are no tests beyond `npm start`.
 
 **[⬆ back to top](#table-of-contents)**
 

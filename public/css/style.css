@@ -51,7 +51,7 @@ textarea:focus, input:focus {
 
 textarea {
   min-width: 50%;
-  min-height: 100px;
+  min-height: 200px;
 }
 
 input.post-title {
