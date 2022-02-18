@@ -2,9 +2,9 @@
 
     {{#each posts as |post|}}
     <div class="post post-list">
-        <h2><a href="/post/{{id}}">{{title}}</a></h2>
+        <h2><a href="/posts/{{id}}">{{title}}</a></h2>
          Posted by <b>{{user.name}}</b> 
-        | {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        | {{format_date created_at}} | <a href="/posts/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
         <h4>{{post_text}}</h4>
         <br>
     </div>
