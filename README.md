@@ -3,7 +3,7 @@
 ![badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-This application A tech blog which allows the developers to publish blog posts, make comments and create accounts using MVC architectural structure, Handlebars.js, Sequelize.. This application is deployed through Heroku.
+This application is a tech blog which allows the developers to publish blog posts, make comments and create accounts using MVC architectural structure, Handlebars.js, Sequelize.. This application is deployed through Heroku.
 
 ## Table of Contents
 - [Description](#description)
