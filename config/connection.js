@@ -4,7 +4,7 @@ require('dotenv').config();
 let sequelize;
 
 if (process.env.NODE_ENV === 'production') {
-  sequelize = new Sequelize(process.env.DATABASE_URL, {
+  sequelize = new Sequelize(process.env.MONGODB_URI, {
     dialect: 'mysql',
     protocol: 'mysql',
     logging: true // Set it to false if you don't want to log SQL queries
